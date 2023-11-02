@@ -1,0 +1,29 @@
+@keyframes iconHeart{
+0%{transform:scale(1)}
+60%{transform:scale(1.1)}
+100%{transform:scale(1)}
+}
+@keyframes bubbleSlide{
+0%{transform:translateX(var(--bubble-width))}
+100%{transform:translateX(0)}
+}
+@keyframes bubbleText{
+0%{opacity:0}
+100%{opacity:1}
+}
+.s-top-right .ai-entry-right.ai-icon-hide-animation .ai-entry-icon{animation:iconHeartHide .4s .24s linear}
+.s-top-right .ai-entry-right.ai-icon-hide-animation .ai-entry-bubble{animation:bubbleSlideHide .38s .16s ease-in-out forwards}
+.s-top-right .ai-entry-right.ai-icon-hide-animation .ai-entry-bubble .ai-entry-bubble-text{animation:bubbleTextHide .24s linear forwards}
+@keyframes iconHeartHide{
+0%{transform:scale(1)}
+60%{transform:scale(1.1)}
+100%{transform:scale(1)}
+}
+@keyframes bubbleSlideHide{
+0%{transform:translateX(0)}
+100%{transform:translateX(var(--bubble-width))}
+}
+@keyframes bubbleTextHide{
+0%{opacity:1}
+100%{opacity:0}
+}
